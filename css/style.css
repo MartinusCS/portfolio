@@ -1,0 +1,279 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../picture/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #212529;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.sidebar h2 i {
+    font-size: 30px;
+}
+
+.sidebar hr {
+    border-color: #444;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover, 
+.sidebar ul li a.active {
+    background-color: #696969;
+    color: white;
+}
+
+.sidebar ul li a i {
+    font-size: 20px;
+}
+
+.sidebar img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+}
+
+.sidebar .sosmed a i {
+    color: white; 
+    position: relative;
+    top: 10px;
+    left: 23px;
+    font-size: 20px; 
+    margin-right: 20px; 
+    transition: color 0.3s; 
+    align-items: center;
+}
+
+.sidebar .sosmed a i:hover {
+    color: #696969; 
+}
+
+#chat-bubble {
+    display: inline-block;
+    background-color: #46d001; /* Hijau muda */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 200px; /* Batas lebar teks */
+    word-wrap: break-word; /* Supaya teks panjang terbungkus */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek */
+}
+
+.home .container {
+    margin-left: 250px; /* Adjust for sidebar width */
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+.home .container h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 30px;
+    color: gray;
+    letter-spacing: -2px;
+    position: relative;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home .container p {
+    font-size: 13px;
+    margin-left: 5%;
+}
+
+.home .midle_menu img {
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.home .midle_menu img:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.home .midle_menu h2,
+h3, h4, h5 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: transparent;
+}
+
+.home .midle_menu h2 {
+    margin-left: 30%;
+    position: relative;
+    top: -5em;
+}
+
+.home .midle_menu h3 {
+    margin-left: 46%;
+    position: relative;
+    top: -7.5em;
+}
+
+.home .midle_menu h4 {
+    margin-left: 59%;
+    position: relative;
+    top: -10em;
+}
+
+.home .midle_menu h5 {
+    margin-left: 77%;
+    position: relative;
+    top: -12.5em;
+}
+
+.home .midle_menu .p2, 
+.p3, 
+.p4, 
+.p5 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(70, 70, 70, 0.9);
+    font-family: 'Georgia', serif;
+    letter-spacing: -0.1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center center;
+}
+
+.home .midle_menu .p2:hover, 
+.p3:hover, 
+.p4:hover, 
+.p5:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.home .midle_menu .p2 {
+    margin-left: 31%;
+    position: relative;
+    top: -11.5em;
+}
+
+.home .midle_menu .p3 {
+    margin-left: 47.5%;
+    position: relative;
+    top: -16.5em;
+}
+
+.home .midle_menu .p4 {
+    margin-left: 58.7%;
+    position: relative;
+    top: -22.2em;
+}
+
+.home .midle_menu .p5 {
+    margin-left: 70%;
+    position: relative;
+    top: -28em;
+}
+
+.about .container h1 {
+    position: relative;
+    top: -200px;
+    left: 20%;
+    color: white;
+}
+
+.about .container p {
+    font-size: 14px;
+    position: relative;
+    top: -200px;
+    left: 20%;
+    color: white;
+}
+
+.portfolio .container table thead tr th {
+    font-size: 24px;
+}
+
+.portfolio table{
+    position:inherit; 
+}
+
+.contact .container table{
+    position: relative;
+    left: 25%;
+    gap: 20%;
+    text-align: center;
+
+}
+
+.contact .container table th{
+    font-size: 30px;
+    color: black;
+}
+
+.contact .container table td i{
+    font-size: 50px;
+    color: black;
+    gap: 30px;
+    padding: 100px;
+    text-align: center;
+
+}
+
+.contact .container table a{
+    text-decoration:none;
+    color: inherit;
+}
